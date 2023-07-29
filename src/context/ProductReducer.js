@@ -30,7 +30,7 @@ const reducer = (globalState, action) => {
           )
         };
       
-      case "VACIAR_PRODUCTO":
+      case "VACIAR_CARRITO":
         return {
           ...globalState,
           cart: [],
