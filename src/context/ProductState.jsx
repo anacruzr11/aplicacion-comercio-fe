@@ -75,6 +75,12 @@ const ProductState = ({ children }) => {
     }
   }
 
+  const vaciarCarrito = () => {
+    dispatch({
+      type: "VACIAR_CARRITO",
+    });
+  };
+
   return (
     <ProductContext.Provider
       value={{
