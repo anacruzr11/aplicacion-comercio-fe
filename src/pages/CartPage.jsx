@@ -66,7 +66,7 @@ const CartPage = () => {
               {user.user_name ? (
                 <>
                   <PaypalCheckoutButton
-                    currency="MXN"
+                    currency="COP"
                     amount={amount}
                     showSpinner={false}
                   />
