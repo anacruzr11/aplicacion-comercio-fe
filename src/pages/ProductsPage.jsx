@@ -1,15 +1,17 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import ProductContext from "../context/ProductContext";
 import { Link } from "react-router-dom";
 
 const ProductsPage = () => {
-  const { getProducts, products } = useContext(ProductContext);
+  const { getProducts, products, addProduct } = useContext(ProductContext);
 
-  const handleClick = async () => {
-    await getProducts();
-    console.log(products)
+  const handleAddProduct = (id) => {
+    addProduct(id);
   };
 
+  useEffect(() => {
+    getProducts()
+  }, [getProducts]);
 
   return (
     <>
@@ -25,6 +27,22 @@ const ProductsPage = () => {
               <div className="card-body">
                 <h5 className="card-title">{product.name}</h5>
                 <p className="card-text">{product.price}</p>
+                
+                <div className="d-flex justify-content-between">
+                  <button
+                    type="button"
+                    className="btn btn-warning btn-lg"
+                    onClick={() => handleAddProduct(product.id)}
+                  >
+                    <i className="bi bi-cart-plus" />
+                  </button>
+                  <Link
+                    to={`/products/${product.id}`}
+                    className="btn btn-info btn-lg"
+                  >
+                    <i className="bi bi-box-seam" />
+                  </Link>
+                 </div>
               </div>
             </div>
           </div>

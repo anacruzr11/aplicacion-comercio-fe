@@ -22,7 +22,7 @@ const RegisterPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
 
-    await iniciarSesion(form)
+    await registrarUsuario(form)
     
     setForm(initForm)
   }
@@ -38,12 +38,12 @@ const RegisterPage = () => {
             User name
            </label>
            <input 
-           type="text" 
-           className="form-control" 
-           id="inputUserName" 
-           name="user_name"
-           value={form.user_name}
-           onChange={handleChange}
+             type="text" 
+             className="form-control" 
+             id="inputUserName" 
+             name="user_name"
+             value={form.user_name}
+             onChange={handleChange}
            />
          </div>
          <div className="mb-3">
@@ -51,12 +51,12 @@ const RegisterPage = () => {
             Password
            </label>
            <input 
-           type="password" 
-           className="form-control" 
-           id="inputPassword"
-           name="password"
-           value={form.password}
-           onChange={handleChange}
+             type="password" 
+             className="form-control" 
+             id="inputPassword"
+             name="password"
+             value={form.password}
+             onChange={handleChange}
            />
          </div>
         <button type="submit" className="btn btn-primary">Crear cuenta</button>

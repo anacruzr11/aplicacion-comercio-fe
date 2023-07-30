@@ -21,4 +21,4 @@ const renewTokenService = async (form) => {
     return resp
 }
 
-export { loginService, registerService, renewToken }
+export { loginService, registerService, renewTokenService }

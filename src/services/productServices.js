@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const URL_ROOT = `http://localhost:4000/api/productos`
+const URL_ROOT = `http://localhost:4000/api/productos` //link de la base de datos
 
 const getProductsService = async () => {
     const response = await axios.get(`${URL_ROOT}`)
