@@ -10,7 +10,7 @@ const initForm = {
 const RegisterPage = () => {
   const [form, setForm] = useState(initForm)
 
-  const { user, iniciarSesion } = useContext(AuthContext)
+  const { user, registrarUsuario } = useContext(AuthContext)
 
   const handleChange = (e) => {
     setForm({
@@ -22,14 +22,14 @@ const RegisterPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
 
-    await registrarUsuario(form)
+    await registrarUsuario(form);
     
     setForm(initForm)
   }
 
   return (
     <>
-     <Header title="Login Page"/>
+     <Header title="Register Page"/>
       <main className="row">
         <article className="col">
         <form onSubmit={handleSubmit}>

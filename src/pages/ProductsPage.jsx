@@ -26,21 +26,20 @@ const ProductsPage = () => {
               />
               <div className="card-body">
                 <h5 className="card-title">{product.name}</h5>
-                <p className="card-text">{product.price}</p>
+                <p className="card-text">${product.price} COP</p>
                 
                 <div className="d-flex justify-content-between">
                   <button
                     type="button"
                     className="btn btn-warning btn-lg"
                     onClick={() => handleAddProduct(product.id)}
-                  >
+                  > 
                     <i className="bi bi-cart-plus" />
                   </button>
                   <Link
                     to={`/products/${product.id}`}
-                    className="btn btn-info btn-lg"
-                  >
-                    <i className="bi bi-box-seam" />
+                    className="btn btn-lg btn-link"
+                  > Ver más...                
                   </Link>
                  </div>
               </div>

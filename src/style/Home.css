@@ -1,0 +1,36 @@
+.contenedor1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+    grid-template-columns: repeat(2, 2fr);
+}
+
+.inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inicio-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 35px;
+}
+
+.inicio-child > h1 {
+    text-align: center;
+}
+
+.inicio-child > p {
+    text-align: center;
+}
+
+
+.display-1 {
+       
+    font-family: 'Josefin Sans', sans-serif;
+}

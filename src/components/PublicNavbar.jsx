@@ -10,7 +10,7 @@ const PublicNavbar = () => {
     <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
       <div className="container">
         <NavLink className="navbar-brand" to="/home">
-          Demo App
+          Benatha
         </NavLink>
         <button
           className="navbar-toggler"
