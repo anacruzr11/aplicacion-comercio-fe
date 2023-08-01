@@ -34,3 +34,9 @@
        
     font-family: 'Josefin Sans', sans-serif;
 }
+
+@media (max-width: 1024px) {
+    .contenedor1 {
+        flex-direction: column;
+    }
+}
