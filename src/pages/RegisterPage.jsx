@@ -1,31 +1,31 @@
 import Header from "../components/Header"
-import { useContext, useState } from "react";
+import { useState, useContext } from "react";
 import AuthContext from "../context/AuthContext";
 
 const initForm = {
   user_name: "",
-  password: ""
-}
+  password: "",
+};
 
 const RegisterPage = () => {
-  const [form, setForm] = useState(initForm)
+  const [form, setForm] = useState(initForm);
 
-  const { user, registrarUsuario } = useContext(AuthContext)
+  const { user, registrarUsuario } = useContext(AuthContext);
 
   const handleChange = (e) => {
     setForm({
       ...form,
-      [e.target.name]: e.target.value
-    })
-  }
+      [e.target.name]: e.target.value,
+    });
+  };
 
   const handleSubmit = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     await registrarUsuario(form);
-    
-    setForm(initForm)
-  }
+
+    setForm(initForm);
+  };
 
   return (
     <>

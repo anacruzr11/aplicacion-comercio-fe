@@ -38,7 +38,7 @@ const CartPage = () => {
                     <p className="card-text">{item.description}</p>
                     <p className="card-text">
                       <small className="text-body-secondary">
-                        {item.price}
+                        ${item.price} COP
                       </small>
                     </p>
                     <div className="d-flex justify-content-end">
@@ -62,7 +62,7 @@ const CartPage = () => {
           {cart.length > 0 ? (
             <>
               <p className="fs-1">Total</p>
-              <p className="fs-2">{amount}</p>
+              <p className="fs-2">${amount} COP</p>
               {user.user_name ? (
                 <>
                   <PaypalCheckoutButton
@@ -81,7 +81,7 @@ const CartPage = () => {
             </>
           ) : (
             <>
-              <p className="fs-1">No hay productos en el carrito</p>
+              <p className="fs-1">Tu carrito aun está vacío</p>
             </>
           )}
         </article>
