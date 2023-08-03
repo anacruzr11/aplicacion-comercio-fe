@@ -8,6 +8,7 @@ const loginService = async (form) => {
 };
 
 const registerService = async (form) => {
+  console.log(form)
   const resp = await axios.post(`${URL_ROOT}/register`, form);
   return resp;
 };

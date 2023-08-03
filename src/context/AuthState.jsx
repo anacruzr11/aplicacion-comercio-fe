@@ -29,7 +29,7 @@ const AuthState = ({ children }) => {
           }
     };
 
-    const registarUsuario = async (form) => {
+    const registrarUsuario = async (form) => {
       try {
           const resp = await registerService(form)
           
@@ -71,7 +71,7 @@ const AuthState = ({ children }) => {
     }
 
   return (
-    <AuthContext.Provider value={{user: globalState.user, iniciarSesion, registarUsuario, logout, renewToken}}>
+    <AuthContext.Provider value={{user: globalState.user, iniciarSesion, registrarUsuario, logout, renewToken}}>
         {children}
     </AuthContext.Provider>
   )

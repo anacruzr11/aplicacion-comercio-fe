@@ -14,7 +14,7 @@ const HomePage = () => {
          </div>
         </div>
         <div className="imgprincipal">
-         <img src="https://www.bettinafrumboli.com/wp-content/uploads/2022/11/tendencias-de-maquillaje-primavera-verano-2023-01.jpg" class="rounded img-thumbnail" alt="main-image" />
+         <img src="https://www.bettinafrumboli.com/wp-content/uploads/2022/11/tendencias-de-maquillaje-primavera-verano-2023-01.jpg" className="rounded img-thumbnail" alt="main-image" />
         </div>
        </article>
       </main>
