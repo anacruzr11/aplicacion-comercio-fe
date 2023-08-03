@@ -28,7 +28,7 @@ const ProductState = ({ children }) => {
     const response = await getProductService(id)
 
     dispatch({
-      type: "OBETENER_PRODUCTO",
+      type: "OBTENER_PRODUCTO",
       payload: response.data.data,
     })
   }, []);

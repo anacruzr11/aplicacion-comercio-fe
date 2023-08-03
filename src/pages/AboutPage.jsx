@@ -6,7 +6,7 @@ const AboutPage = () => {
      <main className="row">
        <article className="contenedor1">
        <div className="imgprincipal">
-         <img src="https://cdn.shopify.com/s/files/1/1849/3247/files/make_up_services_banner_2048x2048.png?v=1629312218" class="rounded img-thumbnail" alt="main-image" />
+         <img src="https://cdn.shopify.com/s/files/1/1849/3247/files/make_up_services_banner_2048x2048.png?v=1629312218" className="rounded img-thumbnail" alt="main-image" />
         </div>
          <div className="inicio">
           <div className="inicio-child">

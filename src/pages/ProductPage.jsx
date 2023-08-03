@@ -30,7 +30,7 @@ const ProductPage = () => {
                     <p className="card-text">{product.description}</p>
                     <p className="card-text">
                       <small className="text-body-secondary">
-                        {product.price}
+                        ${product.price} COP
                       </small>
                     </p>
                   </div>
